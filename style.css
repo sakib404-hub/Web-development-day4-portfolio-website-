@@ -13,7 +13,7 @@
 }
 
 .header{
-    background-image: url("/portfolio-resources/images/developer.png"), url("portfolio-resources/images/header_bg.png");
+    background-image: url("/assets/images/developer.png"), url("assets/images/header_bg.png");
     background-repeat: no-repeat;
     /* background-size: contain, none; */
     background-position: top left, bottom right;
@@ -212,13 +212,38 @@ footer textarea{
     display: none;
 }
 @media screen and (max-width: 576px) {
-    .skill-container, footer, .about-items, .resume-container{
+    .skill-container, footer, .about-items, .resume-container, .banner, nav, nav > ul{
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
-    .resume-container{
+    nav ul{
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .resume-container, .about{
         padding: 20px;
+    }
+    .about{
+        margin: 20px;
+    }
+    .banner-profile{
+        width: 100%;
+    }
+    .banner{
+        margin: 10px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-greetings{
+        font-size: 20px;
+    }
+    .banner-title{
+        font-size: 30px;
+    }
+    .header{
+        background-image: none;
     }
     footer{
         padding: 20px;
@@ -229,8 +254,5 @@ footer textarea{
     }
     footer input[type="text"], footer input[type="Email"], footer textarea{
          width: calc(100% - 40px);
-    }
-    .about{
-        padding: 20px;
     }
 }
