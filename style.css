@@ -212,10 +212,25 @@ footer textarea{
     display: none;
 }
 @media screen and (max-width: 576px) {
-    .skill-container{
+    .skill-container, footer, .about-items, .resume-container{
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
+    .resume-container{
+        padding: 20px;
+    }
+    footer{
+        padding: 20px;
+        margin: 40px 10px 30px 10px;
+    }
+    .footer-column{
+        width: calc(100%);
+    }
+    footer input[type="text"], footer input[type="Email"], footer textarea{
+         width: calc(100% - 40px);
+    }
+    .about{
+        padding: 20px;
+    }
 }
